@@ -6,7 +6,7 @@ import time
 
 
 class TelaPython:
-    sg.theme('Default')
+    sg.theme('LightBrown13')
 
     def __init__(self):
         layout = [
