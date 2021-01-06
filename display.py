@@ -1,6 +1,5 @@
 import PySimpleGUI as sg
 from pytube import YouTube
-import time
 
 
 class TelaPython:
@@ -9,8 +8,8 @@ class TelaPython:
     def __init__(self):
         layout = [
             [sg.Text('Link', size=(4, 0)), sg.Input(size=(34, 0), key='link')],
-            [sg.Checkbox('Video', key='video'),
-             sg.Checkbox('Audio', key='audio')],
+            [sg.Radio('Video', 'formato', key='video'),
+             sg.Radio('Audio', 'formato', key='audio')],
             [sg.Button('Procurar video')],
             [sg.Output(size=(40, 15))]
         ]
