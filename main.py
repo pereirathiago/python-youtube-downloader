@@ -3,7 +3,6 @@ from pytube import YouTube
 link = input('Cole aqui o link: ')
 yt = YouTube(link)
 
-'''
 # Titulo do video
 print(f'Título: {yt.title}')
 # numero de views do video
@@ -15,7 +14,7 @@ print(f'Descrição do video: {yt.description}')
 # Avaliação
 print(f'Avaliação: {yt.rating}')
 
-# printing todos os streams possível'''
+# printing todos os streams possível
 # print(yt.streams)
 
 # somente audio
