@@ -1,7 +1,11 @@
 from pytube import YouTube
 
 link = input('Cole aqui o link: ')
+
+print('Procurando seu vídeo...')
 yt = YouTube(link)
+
+print('======== Achei ========')
 
 # Titulo do video
 print(f'Título: {yt.title}')
@@ -24,6 +28,8 @@ print(f'Avaliação: {yt.rating}')
 # print(yt.streams.filter(only_video=True))
 
 # print(yt.streams.filter(progressive=True))
+
+print(30 * '=')
 
 ys = yt.streams.get_highest_resolution()
 # ys = yt.streams.get_by_itag('22')
